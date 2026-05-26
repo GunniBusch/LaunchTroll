@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		B8C4A7152FC508D800CD44A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8C4A6FF2FC508D700CD44A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8C4A7062FC508D700CD44A4;
+			remoteInfo = LaunchTroll;
+		};
+		B8C4A71F2FC508D800CD44A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8C4A6FF2FC508D700CD44A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8C4A7062FC508D700CD44A4;
+			remoteInfo = LaunchTroll;
+		};
+		B8C4A7312FC508D900CD44A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8C4A6FF2FC508D700CD44A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8C4A73C2FC508D900CD44A4;
+			remoteInfo = LaunchTroll.PrivilegedHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B8C4A7072FC508D700CD44A4 /* LaunchTroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaunchTroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8C4A7142FC508D800CD44A4 /* LaunchTrollTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaunchTrollTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8C4A71E2FC508D800CD44A4 /* LaunchTrollUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaunchTrollUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8C4A7332FC508D900CD44A4 /* $(LAUNCHTROLL_PRIVILEGED_HELPER_BUNDLE_ID) */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "$(LAUNCHTROLL_PRIVILEGED_HELPER_BUNDLE_ID)"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8C4A7352FC508D900CD44A4 /* Packaging/PrivilegedHelper.plist.in */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Packaging/PrivilegedHelper.plist.in; sourceTree = "<group>"; };
+		B8C4A7902FC50F9D00CD44A4 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		B8C4A7912FC50F9D00CD44A4 /* OpenSource.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = OpenSource.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B8C4A7092FC508D700CD44A4 /* LaunchTroll */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = LaunchTroll;
+			sourceTree = "<group>";
+		};
+		B8C4A7172FC508D800CD44A4 /* LaunchTrollTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = LaunchTrollTests;
+			sourceTree = "<group>";
+		};
+		B8C4A7212FC508D800CD44A4 /* LaunchTrollUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = LaunchTrollUITests;
+			sourceTree = "<group>";
+		};
+		B8C4A7342FC508D900CD44A4 /* LaunchTrollPrivilegedHelper */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = LaunchTrollPrivilegedHelper;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B8C4A7042FC508D700CD44A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8C4A7112FC508D800CD44A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8C4A71B2FC508D800CD44A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8C4A73B2FC508D900CD44A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B8C4A6FE2FC508D700CD44A4 = {
+			isa = PBXGroup;
+			children = (
+				B8C4A7092FC508D700CD44A4 /* LaunchTroll */,
+				B8C4A7342FC508D900CD44A4 /* LaunchTrollPrivilegedHelper */,
+				B8C4A7172FC508D800CD44A4 /* LaunchTrollTests */,
+				B8C4A7212FC508D800CD44A4 /* LaunchTrollUITests */,
+				B8C4A7352FC508D900CD44A4 /* Packaging/PrivilegedHelper.plist.in */,
+				B8C4A7922FC50F9D00CD44A4 /* Config */,
+				B8C4A7082FC508D700CD44A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B8C4A7082FC508D700CD44A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8C4A7072FC508D700CD44A4 /* LaunchTroll.app */,
+				B8C4A7332FC508D900CD44A4 /* $(LAUNCHTROLL_PRIVILEGED_HELPER_BUNDLE_ID) */,
+				B8C4A7142FC508D800CD44A4 /* LaunchTrollTests.xctest */,
+				B8C4A71E2FC508D800CD44A4 /* LaunchTrollUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8C4A7922FC50F9D00CD44A4 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				B8C4A7902FC50F9D00CD44A4 /* Config.xcconfig */,
+				B8C4A7912FC50F9D00CD44A4 /* OpenSource.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B8C4A7062FC508D700CD44A4 /* LaunchTroll */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8C4A7282FC508D800CD44A4 /* Build configuration list for PBXNativeTarget "LaunchTroll" */;
+			buildPhases = (
+				B8C4A7032FC508D700CD44A4 /* Sources */,
+				B8C4A7042FC508D700CD44A4 /* Frameworks */,
+				B8C4A7052FC508D700CD44A4 /* Resources */,
+				B8C4A7942FC780000CD44A4 /* Copy Privileged Helper */,
+				B8C4A7932FC5200000CD44A4 /* Generate LaunchDaemon Plist */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8C4A7322FC508D900CD44A4 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B8C4A7092FC508D700CD44A4 /* LaunchTroll */,
+			);
+			name = LaunchTroll;
+			packageProductDependencies = (
+			);
+			productName = LaunchTroll;
+			productReference = B8C4A7072FC508D700CD44A4 /* LaunchTroll.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B8C4A7132FC508D800CD44A4 /* LaunchTrollTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8C4A72B2FC508D800CD44A4 /* Build configuration list for PBXNativeTarget "LaunchTrollTests" */;
+			buildPhases = (
+				B8C4A7102FC508D800CD44A4 /* Sources */,
+				B8C4A7112FC508D800CD44A4 /* Frameworks */,
+				B8C4A7122FC508D800CD44A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8C4A7162FC508D800CD44A4 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B8C4A7172FC508D800CD44A4 /* LaunchTrollTests */,
+			);
+			name = LaunchTrollTests;
+			packageProductDependencies = (
+			);
+			productName = LaunchTrollTests;
+			productReference = B8C4A7142FC508D800CD44A4 /* LaunchTrollTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B8C4A71D2FC508D800CD44A4 /* LaunchTrollUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8C4A72E2FC508D800CD44A4 /* Build configuration list for PBXNativeTarget "LaunchTrollUITests" */;
+			buildPhases = (
+				B8C4A71A2FC508D800CD44A4 /* Sources */,
+				B8C4A71B2FC508D800CD44A4 /* Frameworks */,
+				B8C4A71C2FC508D800CD44A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8C4A7202FC508D800CD44A4 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B8C4A7212FC508D800CD44A4 /* LaunchTrollUITests */,
+			);
+			name = LaunchTrollUITests;
+			packageProductDependencies = (
+			);
+			productName = LaunchTrollUITests;
+			productReference = B8C4A71E2FC508D800CD44A4 /* LaunchTrollUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		B8C4A73C2FC508D900CD44A4 /* LaunchTroll.PrivilegedHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8C4A78F2FC50DD200CD44A4 /* Build configuration list for PBXNativeTarget "LaunchTroll.PrivilegedHelper" */;
+			buildPhases = (
+				B8C4A73A2FC508D900CD44A4 /* Sources */,
+				B8C4A73B2FC508D900CD44A4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B8C4A7342FC508D900CD44A4 /* LaunchTrollPrivilegedHelper */,
+			);
+			name = LaunchTroll.PrivilegedHelper;
+			packageProductDependencies = (
+			);
+			productName = "$(LAUNCHTROLL_PRIVILEGED_HELPER_BUNDLE_ID)";
+			productReference = B8C4A7332FC508D900CD44A4 /* $(LAUNCHTROLL_PRIVILEGED_HELPER_BUNDLE_ID) */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B8C4A6FF2FC508D700CD44A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2650;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					B8C4A7062FC508D700CD44A4 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					B8C4A7132FC508D800CD44A4 = {
+						CreatedOnToolsVersion = 26.5;
+						TestTargetID = B8C4A7062FC508D700CD44A4;
+					};
+					B8C4A71D2FC508D800CD44A4 = {
+						CreatedOnToolsVersion = 26.5;
+						TestTargetID = B8C4A7062FC508D700CD44A4;
+					};
+					B8C4A73C2FC508D900CD44A4 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+				};
+			};
+			buildConfigurationList = B8C4A7022FC508D700CD44A4 /* Build configuration list for PBXProject "LaunchTroll" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B8C4A6FE2FC508D700CD44A4;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B8C4A7082FC508D700CD44A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B8C4A7062FC508D700CD44A4 /* LaunchTroll */,
+				B8C4A73C2FC508D900CD44A4 /* LaunchTroll.PrivilegedHelper */,
+				B8C4A7132FC508D800CD44A4 /* LaunchTrollTests */,
+				B8C4A71D2FC508D800CD44A4 /* LaunchTrollUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B8C4A7052FC508D700CD44A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8C4A7122FC508D800CD44A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8C4A71C2FC508D800CD44A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B8C4A7942FC780000CD44A4 /* Copy Privileged Helper */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(LAUNCHTROLL_PRIVILEGED_HELPER_BUNDLE_ID)",
+			);
+			name = "Copy Privileged Helper";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(TARGET_BUILD_DIR)/$(CONTENTS_FOLDER_PATH)/Library/LaunchServices/$(LAUNCHTROLL_PRIVILEGED_HELPER_BUNDLE_ID)",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\nhelper=\"$BUILT_PRODUCTS_DIR/${LAUNCHTROLL_PRIVILEGED_HELPER_BUNDLE_ID}\"\ndestination=\"$TARGET_BUILD_DIR/$CONTENTS_FOLDER_PATH/Library/LaunchServices\"\nmkdir -p \"$destination\"\ncp \"$helper\" \"$destination/${LAUNCHTROLL_PRIVILEGED_HELPER_BUNDLE_ID}\"\nchmod 755 \"$destination/${LAUNCHTROLL_PRIVILEGED_HELPER_BUNDLE_ID}\"\n";
+		};
+		B8C4A7932FC5200000CD44A4 /* Generate LaunchDaemon Plist */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Packaging/PrivilegedHelper.plist.in",
+			);
+			name = "Generate LaunchDaemon Plist";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(TARGET_BUILD_DIR)/$(CONTENTS_FOLDER_PATH)/Library/LaunchDaemons/$(LAUNCHTROLL_PRIVILEGED_HELPER_BUNDLE_ID).plist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\ninput=\"$SRCROOT/Packaging/PrivilegedHelper.plist.in\"\noutput=\"$TARGET_BUILD_DIR/$CONTENTS_FOLDER_PATH/Library/LaunchDaemons/${LAUNCHTROLL_PRIVILEGED_HELPER_BUNDLE_ID}.plist\"\nmkdir -p \"$(dirname \"$output\")\"\nsed \"s|@LAUNCHTROLL_PRIVILEGED_HELPER_BUNDLE_ID@|${LAUNCHTROLL_PRIVILEGED_HELPER_BUNDLE_ID}|g\" \"$input\" > \"$output\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B8C4A7032FC508D700CD44A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8C4A7102FC508D800CD44A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8C4A71A2FC508D800CD44A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8C4A73A2FC508D900CD44A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B8C4A7162FC508D800CD44A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8C4A7062FC508D700CD44A4 /* LaunchTroll */;
+			targetProxy = B8C4A7152FC508D800CD44A4 /* PBXContainerItemProxy */;
+		};
+		B8C4A7202FC508D800CD44A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8C4A7062FC508D700CD44A4 /* LaunchTroll */;
+			targetProxy = B8C4A71F2FC508D800CD44A4 /* PBXContainerItemProxy */;
+		};
+		B8C4A7322FC508D900CD44A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8C4A73C2FC508D900CD44A4 /* LaunchTroll.PrivilegedHelper */;
+			targetProxy = B8C4A7312FC508D900CD44A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B8C4A7262FC508D800CD44A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8C4A7902FC50F9D00CD44A4 /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "$(LAUNCHTROLL_DEVELOPMENT_TEAM)";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B8C4A7272FC508D800CD44A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8C4A7902FC50F9D00CD44A4 /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "$(LAUNCHTROLL_DEVELOPMENT_TEAM)";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		B8C4A7292FC508D800CD44A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8C4A7902FC50F9D00CD44A4 /* Config.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LaunchTroll/LaunchTroll.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "$(LAUNCHTROLL_DEVELOPMENT_TEAM)";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(LAUNCHTROLL_BASE_BUNDLE_ID)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B8C4A72A2FC508D800CD44A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8C4A7902FC50F9D00CD44A4 /* Config.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LaunchTroll/LaunchTroll.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "$(LAUNCHTROLL_DEVELOPMENT_TEAM)";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(LAUNCHTROLL_BASE_BUNDLE_ID)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B8C4A72C2FC508D800CD44A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8C4A7902FC50F9D00CD44A4 /* Config.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "$(LAUNCHTROLL_DEVELOPMENT_TEAM)";
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(LAUNCHTROLL_BASE_BUNDLE_ID).Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaunchTroll.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LaunchTroll";
+			};
+			name = Debug;
+		};
+		B8C4A72D2FC508D800CD44A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8C4A7902FC50F9D00CD44A4 /* Config.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "$(LAUNCHTROLL_DEVELOPMENT_TEAM)";
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(LAUNCHTROLL_BASE_BUNDLE_ID).Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaunchTroll.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LaunchTroll";
+			};
+			name = Release;
+		};
+		B8C4A72F2FC508D800CD44A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8C4A7902FC50F9D00CD44A4 /* Config.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "$(LAUNCHTROLL_DEVELOPMENT_TEAM)";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(LAUNCHTROLL_BASE_BUNDLE_ID).UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = LaunchTroll;
+			};
+			name = Debug;
+		};
+		B8C4A7302FC508D800CD44A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8C4A7902FC50F9D00CD44A4 /* Config.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "$(LAUNCHTROLL_DEVELOPMENT_TEAM)";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(LAUNCHTROLL_BASE_BUNDLE_ID).UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = LaunchTroll;
+			};
+			name = Release;
+		};
+		B8C4A78D2FC50DB500CD44A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8C4A7902FC50F9D00CD44A4 /* Config.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LaunchTrollPrivilegedHelper/LaunchTrollPrivilegedHelper.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "$(LAUNCHTROLL_DEVELOPMENT_TEAM)";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				OTHER_CODE_SIGN_FLAGS = "--identifier $(LAUNCHTROLL_PRIVILEGED_HELPER_BUNDLE_ID)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(LAUNCHTROLL_PRIVILEGED_HELPER_BUNDLE_ID)";
+				PRODUCT_NAME = "$(LAUNCHTROLL_PRIVILEGED_HELPER_BUNDLE_ID)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B8C4A78E2FC50DB500CD44A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8C4A7902FC50F9D00CD44A4 /* Config.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LaunchTrollPrivilegedHelper/LaunchTrollPrivilegedHelper.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "$(LAUNCHTROLL_DEVELOPMENT_TEAM)";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				OTHER_CODE_SIGN_FLAGS = "--identifier $(LAUNCHTROLL_PRIVILEGED_HELPER_BUNDLE_ID)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(LAUNCHTROLL_PRIVILEGED_HELPER_BUNDLE_ID)";
+				PRODUCT_NAME = "$(LAUNCHTROLL_PRIVILEGED_HELPER_BUNDLE_ID)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B8C4A7022FC508D700CD44A4 /* Build configuration list for PBXProject "LaunchTroll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8C4A7262FC508D800CD44A4 /* Debug */,
+				B8C4A7272FC508D800CD44A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8C4A7282FC508D800CD44A4 /* Build configuration list for PBXNativeTarget "LaunchTroll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8C4A7292FC508D800CD44A4 /* Debug */,
+				B8C4A72A2FC508D800CD44A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8C4A72B2FC508D800CD44A4 /* Build configuration list for PBXNativeTarget "LaunchTrollTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8C4A72C2FC508D800CD44A4 /* Debug */,
+				B8C4A72D2FC508D800CD44A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8C4A72E2FC508D800CD44A4 /* Build configuration list for PBXNativeTarget "LaunchTrollUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8C4A72F2FC508D800CD44A4 /* Debug */,
+				B8C4A7302FC508D800CD44A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8C4A78F2FC50DD200CD44A4 /* Build configuration list for PBXNativeTarget "LaunchTroll.PrivilegedHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8C4A78D2FC50DB500CD44A4 /* Debug */,
+				B8C4A78E2FC50DB500CD44A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B8C4A6FF2FC508D700CD44A4 /* Project object */;
+}

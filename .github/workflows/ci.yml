@@ -1,0 +1,72 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Build and Test
+    runs-on: macos-26
+    timeout-minutes: 30
+
+    env:
+      LAUNCHTROLL_BASE_BUNDLE_ID: com.example.LaunchTroll
+      LAUNCHTROLL_PRIVILEGED_HELPER_BUNDLE_ID: com.example.LaunchTroll.PrivilegedHelper
+      LAUNCHTROLL_DEVELOPMENT_TEAM: ""
+
+    steps:
+      - name: Check out
+        uses: actions/checkout@v6
+
+      - name: Verify no local signing config is checked in
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git ls-files --error-unmatch Config/OpenSource.xcconfig >/dev/null 2>&1; then
+            echo "Config/OpenSource.xcconfig is local-only and must not be committed." >&2
+            exit 1
+          fi
+          if git ls-files | grep -E '(^|/)xcuserdata/|(\.(p12|p8|mobileprovision|provisionprofile|cer)$)|(^|/)\.env(\.|$)'; then
+            echo "Local user data or signing material is tracked." >&2
+            exit 1
+          fi
+
+      - name: Build unit-test bundle
+        shell: bash
+        run: |
+          set -euo pipefail
+          xcodebuild build-for-testing \
+            -project LaunchTroll.xcodeproj \
+            -scheme LaunchTroll \
+            -destination 'platform=macOS' \
+            -only-testing:LaunchTrollTests \
+            -derivedDataPath build/DerivedData \
+            CODE_SIGN_IDENTITY=- \
+            CODE_SIGN_STYLE=Manual \
+            DEVELOPMENT_TEAM= \
+            MACOSX_DEPLOYMENT_TARGET=26.4 \
+            LAUNCHTROLL_DEVELOPMENT_TEAM= \
+            LAUNCHTROLL_BASE_BUNDLE_ID="$LAUNCHTROLL_BASE_BUNDLE_ID" \
+            LAUNCHTROLL_PRIVILEGED_HELPER_BUNDLE_ID="$LAUNCHTROLL_PRIVILEGED_HELPER_BUNDLE_ID"
+
+      - name: Run unit tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          xcodebuild test-without-building \
+            -project LaunchTroll.xcodeproj \
+            -scheme LaunchTroll \
+            -destination 'platform=macOS' \
+            -only-testing:LaunchTrollTests \
+            -derivedDataPath build/DerivedData \
+            MACOSX_DEPLOYMENT_TARGET=26.4
