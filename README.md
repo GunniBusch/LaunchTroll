@@ -34,4 +34,4 @@ Configure this repository variable:
 
 - `LAUNCHTROLL_BASE_BUNDLE_ID`
 
-The workflow imports the Developer ID certificate into a temporary keychain, builds the app, verifies nested signatures, notarizes with `notarytool`, staples the app, and creates a GitHub Release with the final zip.
+The workflow imports the Developer ID certificate into a temporary keychain, builds the app, verifies nested signatures, notarizes with `notarytool`, staples the app, and publishes the final zip with `softprops/action-gh-release`.
