@@ -23,9 +23,12 @@ build/
 Config/OpenSource.xcconfig
 
 # Signing and notarization material must stay in local keychains or GitHub Secrets.
+.local-signing/
 *.cer
 *.p12
 *.p8
+*.csr
+*.certSigningRequest
 *.mobileprovision
 *.provisionprofile
 .env

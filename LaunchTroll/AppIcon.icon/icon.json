@@ -1,0 +1,59 @@
+{
+  "fill" : {
+    "automatic-gradient" : "display-p3:0.07000,0.08500,0.09500,1.00000"
+  },
+  "groups" : [
+    {
+      "blur-material" : 0.18,
+      "layers" : [
+        {
+          "image-name" : "03-admin-shield.svg",
+          "name" : "Admin guard",
+          "position" : {
+            "scale" : 0.72,
+            "translation-in-points" : [
+              88,
+              76
+            ]
+          }
+        },
+        {
+          "image-name" : "02-launch-control.svg",
+          "name" : "Launch control",
+          "position" : {
+            "scale" : 0.94,
+            "translation-in-points" : [
+              -10,
+              -6
+            ]
+          }
+        },
+        {
+          "image-name" : "01-panel.svg",
+          "name" : "Job list panel",
+          "position" : {
+            "scale" : 0.92,
+            "translation-in-points" : [
+              -18,
+              -12
+            ]
+          }
+        }
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.45
+      },
+      "specular" : true,
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.28
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "squares" : [
+      "macOS"
+    ]
+  }
+}
